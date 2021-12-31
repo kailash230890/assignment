@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 const AddTodo = (onAdd) => {
 
@@ -26,7 +27,7 @@ const AddTodo = (onAdd) => {
                     <div className='form-group'>
                         <input  type="text" className="form-control form-control-lg" placeholder='Enter completed' name='completed' />
                     </div>
-                    <button  type="button" className="btn-lg btn-secondary mt-4">Add Task</button>
+                    <Link  type="button" className="btn-lg btn-secondary mt-4" to="/taskpage">Add Task</Link>
                 </form>
             </div>
         </div>

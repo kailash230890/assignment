@@ -3,7 +3,6 @@ import Task from './Task';
 import { Link } from 'react-router-dom';
 import AddTodo from '../todos/AddTodo';
 
-
 const TaskPage = () => {
 
     const [todos, setTodos] = useState([]);
@@ -21,7 +20,6 @@ const TaskPage = () => {
         })
     }
     
-
     const onAdd = async (title,completed) => {
         await fetch('http://jsonplaceholder.typicode.com/todos', {
             method: 'POST',
@@ -70,7 +68,6 @@ const TaskPage = () => {
 
 
 
-    // console.log(todos);
 
     return (
         <div className='container'>
